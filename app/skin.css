@@ -1,0 +1,67 @@
+/* the catbar styles */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: rgb(244 244 245);
+    overflow-y: hidden;
+    transition: 1s;
+}
+
+.overlay ps {
+    cursor: pointer;
+    color: rgb(138, 138, 138);
+    transition-duration: 500ms;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+
+}
+
+.overlay ps:hover,
+.overlay ps:focus {
+    color: #000000;
+    transition-duration: 500ms;
+    font-weight: 500;
+    transform: scale(1.05);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.overlay-content {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay ps {
+        color: #000000;
+        transition-duration: 500ms;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .overlay ps:hover,
+    .overlay ps:focus {
+        color: #000000;
+        transition-duration: 500ms;
+        font-weight: 500;
+        transform: scale(1);
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+}
+
+/* the end of the catbar styles */
