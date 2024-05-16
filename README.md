@@ -11,11 +11,11 @@ after running the script you can view the project on browser by this url
 ``` https://localhost:3000```
 
 Tools Used for creation
-NextJs
-React Icons
-Tailwind CSS
-Daisy UI
-Farmer Motion
+NextJs,
+React Icons,
+Tailwind CSS,
+Daisy UI,
+Farmer Motion,
 GSAP & Many More.
 
 ## Deployed on Vercel
