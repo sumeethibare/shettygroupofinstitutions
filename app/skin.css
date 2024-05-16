@@ -15,7 +15,7 @@
 .overlay ps {
     cursor: pointer;
     color: rgb(138, 138, 138);
-    transition-duration: 500ms;
+    transition-duration: 1s;
     font-size: 1.875rem;
     line-height: 2.25rem;
 
@@ -24,7 +24,7 @@
 .overlay ps:hover,
 .overlay ps:focus {
     color: #000000;
-    transition-duration: 500ms;
+    transition-duration: 600ms;
     font-weight: 500;
     transform: scale(1.05);
     padding-top: 15px;
