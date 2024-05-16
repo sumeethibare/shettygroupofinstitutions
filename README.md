@@ -17,6 +17,7 @@ NextJs,
 React Icons,
 Tailwind CSS,
 Daisy UI,
+Vercel,
 Farmer Motion,
 GSAP & Many More.
 
