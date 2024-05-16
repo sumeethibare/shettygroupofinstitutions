@@ -8,7 +8,9 @@ npm run dev
 
 after running the script you can view the project on browser by this url
 
-``` https://localhost:3000```
+```bash
+https://localhost:3000
+```
 
 Tools Used for creation
 NextJs,
