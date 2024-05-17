@@ -1,3 +1,6 @@
+This is the Project for college which is a website developed on React Js.
+this project is developed with an aim to create nextlevel stunning websites.
+
 ## Getting Started
 
 First, run the development server:
