@@ -7,9 +7,8 @@
     z-index: 1;
     top: 0px;
     left: 0;
-    background-color: rgb(244 244 245);
     overflow-y: hidden;
-    transition: 0.8s cubic-bezier(0.900, 0, 0, 0.500);
+    transition: 1s cubic-bezier(0.900, 0, 0, 0.800);
 }
 
 .overlay ps {
@@ -23,7 +22,7 @@
 
 .overlay ps:hover,
 .overlay ps:focus {
-    color: #000000;
+    color: #ffffff;
     transition-duration: 600ms;
     font-weight: 500;
     transform: scale(1.05);
@@ -46,7 +45,7 @@
     }
 
     .overlay ps {
-        color: #000000;
+        color: #ffffff;
         font-size: 1.6rem;
         line-height: 2rem;
         padding: 10px;
@@ -54,7 +53,7 @@
 
     .overlay ps:hover,
     .overlay ps:focus {
-        color: #000000;
+        color: #ffffff;
         transition-duration: 500ms;
         font-weight: 500;
         transform: scale(1);
