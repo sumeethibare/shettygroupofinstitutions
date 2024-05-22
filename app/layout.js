@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Fluidbar from "./univcom/Fluidbar";
-
+import Fluid from "./navigate/Fluid"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="pastel" className="no-scrollbar">
       <body className={inter.className}>
-        <Fluidbar />
+        <Fluid />
         {children}
       </body>
     </html>

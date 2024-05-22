@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from 'react';
-import '../skin.css';
+import './skin.css';
 import '../globals.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-const Fluidbar = () => {
+const Fluid = () => {
     const [navOpen, setNavOpen] = useState(false);
 
     // Toggle navbar
@@ -86,4 +86,4 @@ const Fluidbar = () => {
     );
 }
 
-export default Fluidbar;
+export default Fluid;
