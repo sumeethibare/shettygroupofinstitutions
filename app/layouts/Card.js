@@ -14,17 +14,12 @@ const cards = [
         title: "Title 1",
         id: 1,
     },
-    {
-        url: "/imgs/abstract/2.jpg",
-        title: "Title 2",
-        id: 2,
-    },
 
 ];
 
 const Card = () => {
     return (
-        <div className="grid grid-cols-4 w-full place-content-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
+        <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 w-full place-content-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
             {cards.map(card => (
                 <TiltCard key={card.id} card={card} />
             ))}
