@@ -6,7 +6,7 @@ First, run the development server:
 npm run dev
 ```
 ```bash
- npm install styled-components
+npm install styled-components
 ```
 after running the script you can view the project on browser by this url
 
