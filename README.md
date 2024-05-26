@@ -5,15 +5,15 @@ First, run the development server:
 ```bash
 npm run dev
 ```
-
+```bash
+ npm install styled-components
+```
 after running the script you can view the project on browser by this url
 
 ```bash
 https://localhost:3000
 ```
-```bash
- npm install styled-components
-```
+
 Tools Used for creation
 NextJs,
 React Icons,
