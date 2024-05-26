@@ -72,7 +72,7 @@ const Fluid = () => {
 
             {/* Navbar access button */}
 
-            <div className='float float-right right-10 top-10 z-50 sticky bg-white rounded-full'>
+            <div className='float float-right right-10 top-10 sticky bg-white rounded-full z-[9999]'>
                 <button onClick={toggleNav} className="btn btn-ghost btn-lg btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
                         {navOpen ?

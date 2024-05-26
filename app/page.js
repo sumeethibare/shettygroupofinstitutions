@@ -2,6 +2,8 @@ import Impressout from "./layouts/Impressout";
 import Horizontally from "./layouts/Horizonatally";
 import Card from "./layouts/Card";
 import Advert from './layouts/Advert'
+import Branches from './Subsideries/Branches'
+import About from './about/About'
 export default function Home() {
   return (
     <>
@@ -9,6 +11,8 @@ export default function Home() {
       <Advert />
       <Horizontally />
       <Card />
+      <About />
+      <Branches />
     </>
   );
 }

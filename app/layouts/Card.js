@@ -11,7 +11,7 @@ import { FiMousePointer } from "react-icons/fi";
 const cards = [
     {
         url: "/imgs/abstract/1.jpg",
-        title: "Title 1",
+        title: "shettyinstitute ",
         id: 1,
     },
 
