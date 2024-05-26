@@ -37,7 +37,7 @@ export default function Advert() {
 
   return (
     <>
-      <div id="video-container" className='h-screen bg-yellow-300 flex items-center justify-center overflow-hidden relative'>
+      <div id="video-container" className='bg-yellow-300 flex items-center justify-center overflow-hidden relative'>
 
         <h1 className='float-left left-2 text-9xl top-2 absolute font-black text-yellow-400 p-4'>SGI</h1>
 
