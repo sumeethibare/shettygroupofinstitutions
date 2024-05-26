@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="pastel" className="no-scrollbar">
+    <html lang="en" data-theme="pastel" className="no-scrollbar bg-gray-900">
       <body className={inter.className}>
         <Fluid />
         {children}
