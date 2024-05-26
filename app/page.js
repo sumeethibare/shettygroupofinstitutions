@@ -8,7 +8,7 @@ export default function Home() {
       <Impressout />
       <Advert />
       <Horizontally />
-      {/* <Card /> */}
+      {/* <Card />  this is updated using vssync*/}
     </>
   );
 }
