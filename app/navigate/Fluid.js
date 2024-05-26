@@ -18,10 +18,10 @@ const Fluid = () => {
             {/* Navbar */}
             <div id="myNav" className="overlay no-scrollbar">
                 <div className="overlayContent">
-                    <div className='flex flex-col max-h-screen no-scrollbar bg-zinc-950' onClick={toggleNav}>
+                    <div className='flex flex-col max-h-screen no-scrollbar fluidity' onClick={toggleNav}>
                         {/* Top content */}
                         <div className='overflow-auto lg:overflow-hidden no-scrollbar'>
-                            <div className='flex lg:flex-row flex-col border-t-2 divide-x-2 divide-zinc-800 h-screen'>
+                            <div className='flex lg:flex-row flex-col border-t-2 divide-x-2 divide-zinc-500 h-screen'>
                                 <div className='flex flex-col lg:space-y-5 space-y-2 px-6 lg:p-14 p-8 h-max lg:w-3/12'>
                                     <p className='text-xs lg:pb-10 tracking-widest font-bold text-zinc-300'>SECTIONS</p>
                                     <ps>About Us</ps>
@@ -32,7 +32,7 @@ const Fluid = () => {
                                     <ps>Compass</ps>
                                     <ps>Portals</ps>
                                 </div>
-                                <div className='flex flex-col lg:flex-row divide-x-2 lg:w-11/12 divide-zinc-800'>
+                                <div className='flex flex-col lg:flex-row divide-x-2 lg:w-11/12 divide-zinc-500'>
                                     <div className='flex flex-col lg:space-y-5 space-y-2 px-6 lg:w-4/12 lg:p-14 p-8'>
                                         <p className='text-xs lg:pb-10 tracking-widest font-bold text-zinc-300'>QUICK LINKS</p>
                                         <ps>Student Center</ps>
@@ -53,7 +53,7 @@ const Fluid = () => {
                             </div>
                         </div>
                         {/* Bottom content */}
-                        <div className='h-24 w-full lg:flex hidden lg:flex-row flex-col lg:justify-between border-t-2 border-zinc-800 divide-x-2 lg:px-5 divide-zinc-800 text-zinc-300'>
+                        <div className='h-24 w-full lg:flex hidden lg:flex-row flex-col lg:justify-between border-t-2 border-zinc-500 divide-x-2 lg:px-5 divide-zinc-500 text-zinc-300'>
                             <div className='lg:w-3/12 lg:pr-14 py-10 flex justify-evenly'>
                                 <FaFacebookF size={20} />
                                 <FaInstagram size={20} />

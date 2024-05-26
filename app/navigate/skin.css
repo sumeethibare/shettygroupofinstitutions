@@ -11,6 +11,11 @@
     transition: 1s cubic-bezier(0.900, 0, 0, 0.800);
 }
 
+.fluidity {
+    backdrop-filter: brightness(.2);
+    backdrop-filter: blur(64px);
+
+}
 
 .overlay ps {
     cursor: pointer;
