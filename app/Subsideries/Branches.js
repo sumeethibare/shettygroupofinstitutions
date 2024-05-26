@@ -1,8 +1,6 @@
-'use client'; // Ensures Link component renders on client-side
-
+'use client';
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import { FiArrowRight } from "react-icons/fi";
 import subsideriesData from "./Subsideries";
 
 const Link = ({ heading, imgSrc, subheading, href }) => {
@@ -40,7 +38,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             onMouseMove={handleMouseMove}
             initial="initial"
             whileHover="whileHover"
-            className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+            className="group relative flex items-center justify-between py-10 lg:py-4 lg:px-16 transition-all duration-1000 md:py-8 lg:hover:p-40 lg:my-20 border-b border-zinc-900"
         >
             <div>
                 <motion.span
@@ -50,16 +48,16 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
                     }}
                     transition={{
                         type: "spring",
-                        staggerChildren: 0.075,
+                        staggerChildren: 0.055,
                         delayChildren: 0.25,
                     }}
-                    className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+                    className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl lg:py-10"
                 >
                     {heading.split("").map((l, i) => (
                         <motion.span
                             variants={{
                                 initial: { x: 0 },
-                                whileHover: { x: 16 },
+                                whileHover: { x: 20 },
                             }}
                             transition={{ type: "spring" }}
                             className="inline-block"
@@ -69,7 +67,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
                         </motion.span>
                     ))}
                 </motion.span>
-                <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+                <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 lg:pl-10">
                     {subheading}
                 </span>
             </div>
@@ -82,13 +80,13 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
                     translateY: "-50%",
                 }}
                 variants={{
-                    initial: { scale: 0, rotate: "-12.5deg" },
+                    initial: { scale: 0, rotate: "-18.5deg" },
                     whileHover: { scale: 1, rotate: "12.5deg" },
                 }}
                 transition={{ type: "spring" }}
                 src={imgSrc}
-                className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
-                alt={`Image representing a link for ${heading}`}
+                className="absolute z-0 h-40 w-40 rounded-lg object-cover md:h-96 md:w-96"
+                alt={` ${heading}`}
             />
 
             <motion.div
@@ -105,7 +103,12 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
                 transition={{ type: "spring" }}
                 className="relative z-10 p-4"
             >
-                <FiArrowRight className="text-5xl text-neutral-50" />
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="size-12 text-neutral-50">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+
+
             </motion.div>
         </motion.a>
     );
@@ -114,7 +117,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
 const Branches = () => {
     return (
         <section className="bg-neutral-950 p-4 md:p-8">
-            <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-8xl">
                 {subsideriesData.map((link, index) => (
                     <Link
                         key={index}

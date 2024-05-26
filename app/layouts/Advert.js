@@ -37,13 +37,10 @@ export default function Advert() {
 
   return (
     <>
-      <div id="video-container" className='bg-yellow-300 flex items-center justify-center overflow-hidden relative'>
-
-        <h1 className='float-left left-2 text-9xl top-2 absolute font-black text-yellow-400 p-4'>SGI</h1>
-
+      <div id="video-container" className='bg-black flex items-center justify-center overflow-hidden relative hover:rounded-2xl'>
         <video
           ref={videoRef}
-          className="videozoom w-11/12 object-cover lg:h-screen h-[480px] lg:rounded-none lg:p-10 duration-700 rounded-xl lg:mt-0 mt-20 scale-75"
+          className="videozoom w-11/12 object-cover lg:h-screen h-[480px] lg:rounded-none lg:p-10 duration-700 rounded-xl lg:mt-0 mt-20 mb-10 hover:scale-110"
           autoPlay
           muted
           loop
@@ -53,9 +50,6 @@ export default function Advert() {
             type="video/mp4"
           />
         </video>
-        <div>
-          {/* the verticAl scroll contents */}
-        </div>
       </div>
     </>
   );

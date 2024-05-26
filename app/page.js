@@ -1,8 +1,8 @@
 import Impress from './Impress/Impressout'
 import Advert from './layouts/Advert'
 import Horizontally from "./layouts/Horizonatally";
-import Card from "./layouts/Card";
-import Branches from './Subsideries/Branches';
+import About from './about/About'
+import Card from "./management/Card";
 import Footer from './base/Footer';
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <Impress />
       <Advert />
       <Horizontally />
+      <About />
       <Card />
-      <Branches />
       <Footer />
     </>
   );
