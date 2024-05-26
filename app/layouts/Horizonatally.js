@@ -14,12 +14,15 @@ const HorizontalScrollCarousel = () => {
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["50%", "-105%"]);
 
     return (
         <section ref={targetRef} className="relative h-[300vh] bg-yellow-300">
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-4">
+                <h1 className="absolute max-w-7xl text-zinc-950 text-center text-6xl font-semibold leading-tight sm:text-5xl sm:leading-tight md:text-9xl md:leading-tight font-serif italic">
+                    talents worth facinating!
+                </h1>
+                <motion.div style={{ x }} className="flex lg:gap-14 gap-4">
                     {cards.map((card) => {
                         return <Card card={card} key={card.id} />;
                     })}
@@ -33,7 +36,7 @@ const Card = ({ card }) => {
     return (
         <div
             key={card.id}
-            className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+            className="group relative h-[450px] w-[450px] overflow-hidden bg-black"
         >
             <div
                 style={{

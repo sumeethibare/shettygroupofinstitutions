@@ -6,7 +6,6 @@ import {
     useMotionValue,
     useSpring,
 } from "framer-motion";
-import { FiMousePointer } from "react-icons/fi";
 
 const cards = [
     {
@@ -19,10 +18,15 @@ const cards = [
 
 const Card = () => {
     return (
-        <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 w-full place-content-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
-            {cards.map(card => (
-                <TiltCard key={card.id} card={card} />
-            ))}
+        <div>
+            <div>
+                <h1 className="text-3xl text-white p-10 font-serif italic">meet the management</h1>
+            </div>
+            <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 w-full place-content-center px-4 py-12 text-slate-900">
+                {cards.map(card => (
+                    <TiltCard key={card.id} card={card} />
+                ))}
+            </div>
         </div>
     );
 };
